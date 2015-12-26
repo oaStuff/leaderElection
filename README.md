@@ -1,0 +1,1 @@
+This is a library that helps support the election of a leader amongst multiple co-operative processes.
