@@ -35,7 +35,9 @@ func newParticipant(multicastNet string, networkInterface string) (*Participant,
 	}
 
 	addrsTokens := strings.Split(multicastNet,":")
-	p := &Participant{state:FOLLOWER, ipAddr:addrsTokens[0], port:addrsTokens[1], heardFromLeader:false, writeMutex:&sync.Mutex{}, electionTimer:nil, waitForAnotherLeader:false}
+	p := &Participant{state:FOLLOWER, ipAddr:addrsTokens[0], port:addrsTokens[1], heardFromLeader:false,
+								writeMutex:&sync.Mutex{}, electionTimer:nil, waitForAnotherLeader:false}
+
 	if "" == networkInterface {
 		return nil, errors.New("Network interface must be specified")
 	}
