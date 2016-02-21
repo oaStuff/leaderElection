@@ -17,7 +17,6 @@ func myCallback(state int){
 func TestSomething(t *testing.T) {
 
 	err := election.RegisterCallback(myCallback,"239.0.1.1:9999","eth1")
-
 	if err != nil{
 		t.Error(err)
 	}

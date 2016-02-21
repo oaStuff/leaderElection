@@ -27,7 +27,7 @@ func main() {
     bChan := make(chan bool)
     err := election.RegisterCallback(myCallback,"239.0.1.1:9999","eth1")
 	if err != nil{
-		t.Error(err)
+		panic(err)
 	}
 	
 	<-bChan
