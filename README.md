@@ -1,6 +1,6 @@
 # This is a library implementing dynamic leadership election using bully algorithm in GO.
 ### disclaimer
-I am not an expert implementing bully algorithm. This was just a 'play project' learing Golang.
+I am not an expert implementing bully algorithm. This was just a 'play project' learning Golang.
 
 #### Installation
 
